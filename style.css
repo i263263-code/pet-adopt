@@ -1,16 +1,284 @@
-.owais{
 
+/* PetGon - Warm Pet Adoption Theme */
 
-    text-align: center;
-width: 100%;
-background-color:black
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-th{
-text-align: center;
-    background-color:rgb(74, 125, 107)
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F0E6;
+    color: #49382E;
+    line-height: 1.7;
 }
-td{
+
+/* Header */
+
+.site-header {
+    background-color: #49382E;
+    color: #F7F0E6;
     text-align: center;
-    background-color:rgb(144, 240, 232)
+    padding: 22px;
+}
+
+.site-header h1 {
+    font-size: 38px;
+    color: #E6B995;
+}
+
+.site-header p {
+    font-size: 14px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #75866A;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F7D9BB;
+}
+
+/* Homepage Hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+    padding: 65px 7%;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.small-heading {
+    color: #B87955;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    line-height: 1.3;
+    color: #49382E;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.hero-images {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.hero-images img {
+    width: 45%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.hero-images img:first-child {
+    width: 70%;
+    height: 230px;
+}
+
+/* Buttons */
+
+.main-button {
+    display: inline-block;
+    background-color: #B87955;
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.main-button:hover {
+    background-color: #49382E;
+}
+
+/* Welcome Section */
+
+.welcome {
+    text-align: center;
+    padding: 55px 12%;
+    background-color: #EDE2D2;
+}
+
+.welcome h2 {
+    color: #75866A;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    max-width: 750px;
+    margin: 12px auto;
+}
+
+/* Quote Section */
+
+.quote-section {
+    text-align: center;
+    padding: 45px 15px;
+    color: white;
+    background-color: #75866A;
+}
+
+.quote-section h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Pet Cards */
+
+.pet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px auto;
+}
+
+.pet-card {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(73, 56, 46, 0.12);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pet-card h3 {
+    color: #75866A;
+    margin: 10px;
+}
+
+/* General Content */
+
+main {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #75866A;
+    margin-bottom: 15px;
+}
+
+/* Adoption Form */
+
+form {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #C9B8A5;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #B87955;
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #49382E;
+}
+
+/* Thank You Message */
+
+#thankYou {
+    display: none;
+    background-color: #EDE2D2;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 25px auto;
+    max-width: 550px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #49382E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile Design */
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 35px 5%;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .hero-images img {
+        height: 140px;
+    }
 }
